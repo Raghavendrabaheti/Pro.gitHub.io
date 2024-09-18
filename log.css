@@ -19,8 +19,8 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-image: url(img/vi.jpg);
-    /* background-color: hsl(var(--hue), 100%, 20%); */
+    /* background-image: url(img/vi.jpg); */
+    background: linear-gradient(45deg, rgb(165, 26, 235), rgb(0, 255, 238));
     justify-content: center;
     align-items: center;
     background-position: center;
@@ -40,7 +40,7 @@ body.wrong {
     height: 480px;
     position: relative;
     margin: 6% auto;
-    background-image: url(img/a.jpg);
+    background: linear-gradient(45deg, red, yellow);
     backdrop-filter: blur(16px);
     padding: 5px;
     overflow: hidden;
