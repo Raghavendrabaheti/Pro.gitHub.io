@@ -46,8 +46,8 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #216e92;
+	background-color: #216e92;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -146,6 +146,7 @@ input {
 
 .overlay-container {
 	position: absolute;
+    border-radius: 150px 0 0 100px;
 	top: 0;
 	left: 50%;
 	width: 50%;
@@ -157,14 +158,17 @@ input {
 
 .container.right-panel-active .overlay-container{
 	transform: translateX(-100%);
+        border-radius: 0 150px 100px 0;
+
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
-	background-repeat: no-repeat;
-	background-size: cover;
+	/* background: #FF416C; */
+    background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926");
+	/* background: -webkit-linear-gradient(to right, #55ff2b, #41ff93); */
+	/* background: linear-gradient(to right, #216e92, #106065);  */
+	background-repeat: no-repeat;                               
+	background-size: cover;     
 	background-position: 0 0;
 	color: #FFFFFF;
 	position: relative;
@@ -224,4 +228,20 @@ input {
 	margin: 0 5px;
 	height: 40px;
 	width: 40px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns items to the left */
+    width: 100%;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 10px; /* Adjust the space between checkbox and label */
+}
+
+.terms a {
+    color: #ff2b2b;
+    text-decoration: underline;
 }
